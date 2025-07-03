@@ -112,20 +112,46 @@ public class Main{
 //
 //        input.close();
 
+
+        //Question 7: Calculate the sum of N user-entered numbers
+
+
+//        Scanner input = new Scanner(System.in);
+//        System.out.print("Enter how many Number : ");
+//        int n = input.nextInt();
+//
+//        int sum = 0;
+//
+//        for (int i = 1; i <=n ; i++) {
+//            System.out.print("Enter your Number "+ i + " :");
+//            int X = input.nextInt();
+//            sum += X;
+//
+//        }
+//
+//        System.out.println("Your Sum is : "+ sum);
+
+
+        // Question 8 : Count the number of vowels in a string.
+
         Scanner input = new Scanner(System.in);
-        System.out.print("Enter how many Number : ");
-        int n = input.nextInt();
+        System.out.print("Enter your String : ");
 
-        int sum = 0;
+        String UserWord = input.nextLine();
 
-        for (int i = 1; i <=n ; i++) {
-            System.out.print("Enter your Number "+ i + " :");
-            int X = input.nextInt();
-            sum += X;
+        int VowelCount = 0;
 
+        String Word = UserWord.toLowerCase();
+
+        for(int i = 0; i< Word.length(); i++) {
+            if (Word.charAt(i) == 'a' || Word.charAt(i) == 'i' || Word.charAt(i) == 'o' || Word.charAt(i) == 'u'|| Word.charAt(i) == 'e') {
+                VowelCount++;
+            }
         }
 
-        System.out.println("Your Sum is : "+sum);
+        System.out.println("In this word " +Word + " you have VowelCount " + VowelCount);
+
+        input.close();
 
 
 

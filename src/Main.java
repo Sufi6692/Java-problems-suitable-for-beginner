@@ -1,4 +1,5 @@
 import java.sql.SQLOutput;
+import java.util.Queue;
 import java.util.Scanner;
 
 public class Main{
@@ -134,28 +135,36 @@ public class Main{
 
         // Question 8 : Count the number of vowels in a string.
 
+//        Scanner input = new Scanner(System.in);
+//        System.out.print("Enter your String : ");
+//
+//        String UserWord = input.nextLine();
+//
+//        int VowelCount = 0;
+//
+//        String Word = UserWord.toLowerCase();
+//
+//        for(int i = 0; i< Word.length(); i++) {
+//            if (Word.charAt(i) == 'a' || Word.charAt(i) == 'i' || Word.charAt(i) == 'o' || Word.charAt(i) == 'u'|| Word.charAt(i) == 'e') {
+//                VowelCount++;
+//            }
+//        }
+//
+//        System.out.println("In this word " +Word + " you have VowelCount " + VowelCount);
+//
+//        input.close();
+
+        // 9. Word reversal: Reverse the words in a string but keep the letters in the original order.
+
         Scanner input = new Scanner(System.in);
-        System.out.print("Enter your String : ");
-
+        System.out.print("Enter your sentence : ");
         String UserWord = input.nextLine();
+           String[] Word = UserWord.split(" ");
 
-        int VowelCount = 0;
-
-        String Word = UserWord.toLowerCase();
-
-        for(int i = 0; i< Word.length(); i++) {
-            if (Word.charAt(i) == 'a' || Word.charAt(i) == 'i' || Word.charAt(i) == 'o' || Word.charAt(i) == 'u'|| Word.charAt(i) == 'e') {
-                VowelCount++;
-            }
+        for(int i = Word.length-1; i>=0 ; i--) {
+            System.out.print(Word[i]+" ");
         }
 
-        System.out.println("In this word " +Word + " you have VowelCount " + VowelCount);
-
         input.close();
-
-
-
-
-
     }
 }

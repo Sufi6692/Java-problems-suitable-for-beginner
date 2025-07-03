@@ -156,15 +156,31 @@ public class Main{
 
         // 9. Word reversal: Reverse the words in a string but keep the letters in the original order.
 
-        Scanner input = new Scanner(System.in);
-        System.out.print("Enter your sentence : ");
-        String UserWord = input.nextLine();
-           String[] Word = UserWord.split(" ");
+//        Scanner input = new Scanner(System.in);
+//        System.out.print("Enter your sentence : ");
+//        String UserWord = input.nextLine();
+//           String[] Word = UserWord.split(" ");
+//
+//        for(int i = Word.length-1; i>=0 ; i--) {
+//            System.out.print(Word[i]+" ");
+//        }
+//
+//        input.close();
+//
 
-        for(int i = Word.length-1; i>=0 ; i--) {
-            System.out.print(Word[i]+" ");
-        }
 
-        input.close();
+        // 10. Find the second-to-last word in a string of words.\
+
+//        Scanner input = new Scanner(System.in);
+//        System.out.println("Enter your sentence : ");
+//        String UserWord = input.nextLine();
+//        String[] Word = UserWord.split(" ");
+//
+//        if (Word.length < 2) {
+//            System.out.println("Not enough words in the input");
+//        } else {
+//            System.out.println("Second-to-last word is: " + Word[Word.length - 2]);
+//        }
+//        input.close();
     }
 }
